@@ -24,7 +24,7 @@ public class TestMemcached {
 	public static void main(String[] args) {
 		// memcached should be running on port 11211 but NOT on 11212
 
-		String[] servers = { "localhost:11111" };
+		String[] servers = { "123.57.9.151:11211" };
 		SockIOPool pool = SockIOPool.getInstance();
 		pool.setServers(servers);
 		pool.setFailover(true);
